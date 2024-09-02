@@ -48,8 +48,27 @@ programa {
       pare
       caso 3: 
       //EXTRATO
-       
-      pare
+       escreva("Digite o valor para depositar: ")
+        leia(deposito)
+        enquanto(deposito<0){
+          escreva("Valor invalido digite novamente: ")
+          leia(deposito)
+        }
+        saldo = saldo + deposito
+        extrato = extrato + "DEPOSITO ------------ R$" + deposito + "\n"
+        escreva("Deposito realizado com sucesso!\n")
+        escreva("Aperte ENTER para continuar")
+          leia(controle)
+          limpa()
+        pare
+        // SAIDA
+        caso 4:
+        escreva(extrato)
+         escreva("Aperte ENTER para continuar")
+          leia(controle)
+          limpa()
+        pare
+      
     } 
    }
    }
